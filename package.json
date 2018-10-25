@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder_package",
+  "version": "1.0.0",
+  "description": "A package for the FriendFinder application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkat44/FriendFinder.git"
+  },
+  "author": "Mary Carr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkat44/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/mkat44/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "require": "^2.4.20"
+  }
+}
