@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder | Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="container">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h1 class="display-4"><i class="fas fa-user-friends"></i> Friend Finder</h1>
+            <hr>
+            <p class="lead">Find your perfect best friend!</p>
+            <a class="btn btn-primary btn-lg" href="/" role="button"><i class="fas fa-home"></i> Head Back Home</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="survey">
+            <h3>About You</h3>
+            <h5>Name (Required)</h5>
+            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+            <h5>Photo (Required)</h5>
+            <input type="text" class="form-control" id="photo" placeholder="Image Link" required>
+            <hr>
+            <h3>Question 1</h3>
+            <h5>You prefer taking care of people rather than being taken care of.</h5>
+                <select class="custom-select" id="question1">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 2</h3>
+            <h5>Generally speaking, you rely more on your own experiences.</h5>
+                <select class="custom-select" id="question2">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 3</h3>
+            <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+                <select class="custom-select" id="question3">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 4</h3>
+            <h5>You don't like being pushed aside.</h5>
+                <select class="custom-select" id="question4">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 5</h3>
+            <h5>People can rarely upset you.</h5>
+                <select class="custom-select" id="question5">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 6</h3>
+            <h5>It is often difficult for you to relate to other peoples' feelings.</h5>
+                <select class="custom-select" id="question6">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 7</h3>
+            <h5>You find it easy to conform to what people think you should be.</h5>
+                <select class="custom-select" id="question7">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 8</h3>
+            <h5>What you lack in power, you make up for in spunk.</h5>
+                <select class="custom-select" id="question8">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 9</h3>
+            <h5>You prefer animals to people.</h5>
+                <select class="custom-select" id="question9">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 10</h3>
+            <h5>You feel more energetic after spending time with people.</h5>
+                <select class="custom-select" id="question10">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 11</h3>
+            <h5>You are extremely nurturing and caring.</h5>
+                <select class="custom-select" id="question11">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 12</h3>
+            <h5>Loyalty is one of your best qualities.</h5>
+                <select class="custom-select" id="question12">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 13</h3>
+            <h5>You tend to be hot-headed and quick to act.</h5>
+                <select class="custom-select" id="question13">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 14</h3>
+            <h5>You prefer to choose your own fate.</h5>
+                <select class="custom-select" id="question14">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 15</h3>
+            <h5>When in danger, you tend to withdraw rather than confront it head-on.</h5>
+                <select class="custom-select" id="question15">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 16</h3>
+            <h5>You have a signature style.</h5>
+                <select class="custom-select" id="question16">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 17</h3>
+            <h5>People often underestimate you.</h5>
+                <select class="custom-select" id="question17">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 18</h3>
+            <h5>You are sassy and always have a lot to say.</h5>
+                <select class="custom-select" id="question18">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 19</h3>
+            <h5>You tend to be the center of attention.</h5>
+                <select class="custom-select" id="question19">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <h3>Question 20</h3>
+            <h5>You are easily adaptable.</h5>
+                <select class="custom-select" id="question20">
+                    <option selected disabled>Please select...</option>
+                    <option value="1">One (Strongly Disagree)</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five (Strongly Agree)</option>
+                </select>
+            <hr>
+            <button class="btn btn-lg btn-primary" id="submit-btn" type="Submit"><i class="far fa-check-square"></i> Submit</button>
+        </form>
+        <div id="bestFriend"> 
+            <h1>Congratulations!</h1>
+            <h4>Your best friend is <span id="matchedName"></span></h4>
+            <hr>
+            <img class="img-fluid rounded" id="matchedImage">
+            <p class="lead">We hope you enjoy your adventures together!</p>
+        </div>
+    </div>
+
+    <footer class="sticky-bottom container">
+            <a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/mkat44/FriendFinder" target="_blank">GitHub Repo</a>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#bestFriend").hide();
+
+            $("#submit-btn").on('click', function(event) {
+			event.preventDefault();
+			var userInput = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores:[
+					$("#question1").val().trim(),
+					$("#question2").val().trim(),
+					$("#question3").val().trim(),
+					$("#question4").val().trim(),
+					$("#question5").val().trim(),
+					$("#question6").val().trim(),
+					$("#question7").val().trim(),
+					$("#question8").val().trim(),
+					$("#question9").val().trim(),
+                    $("#question10").val().trim(),
+                    $("#question11").val().trim(),
+                    $("#question12").val().trim(),
+                    $("#question13").val().trim(),
+                    $("#question14").val().trim(),
+                    $("#question15").val().trim(),
+                    $("#question16").val().trim(),
+                    $("#question17").val().trim(),
+                    $("#question18").val().trim(),
+                    $("#question19").val().trim(),
+                    $("#question20").val().trim()
+				]
+            };
+            $.post("/api/friends", userInput)
+      		.then(function(data) {
+                  console.log(data);
+                $("#bestFriend").show();
+      			$("#matchedName").append(data.matchedName);
+                $("#matchedImage").attr("src", data.matchedImage);
+                $("#survey").hide();
+              });
+            });
+        });
+    </script>
+</body>
+</html>
